@@ -8,24 +8,20 @@ class Flex extends Component {
             <div>
                 <div class="flex-container">
                     <div class='div2'>
-                        <p>
-                            <img class='img' src='https://images-na.ssl-images-amazon.com/images/I/810BkqRP%2BiL.jpg' alt=''></img>
-                        </p>
+                        <img class='img' src='https://images-na.ssl-images-amazon.com/images/I/810BkqRP%2BiL.jpg' alt='Gambar Buku'></img>
+                        <h5> Fifty Shades of Grey</h5>
                     </div>
                     <div class='div2'>
-                        <p>
-                            <img class='img' src='https://kbimages1-a.akamaihd.net/eee22d16-b296-427a-b84f-5fb3608abb4f/1200/1200/False/harry-potter-the-complete-collection-1-7-1.jpg' alt=''></img>
-                        </p>
+                        <img class='img' src='https://pictures.abebooks.com/isbn/9780739408254-us.jpg' alt='Gambar Buku'></img>
+                        <h5> The lord of The Rings</h5>
                     </div>
                     <div class='div2'>
-                        <p>
-                            <img class='img' src='https://kbimages1-a.akamaihd.net/8fb7d2a8-fe85-40b7-9661-63d87772a968/1200/1200/False/harry-potter-and-the-prisoner-of-azkaban-5.jpg' alt=''></img>
-                        </p>
+                        <img class='img' src='https://images-na.ssl-images-amazon.com/images/I/81-DFVziuwL.jpg' alt='Gambar Buku'></img>
+                        <h5> Divergent</h5>
                     </div>
                     <div class='div2'>
-                        <p>
-                            <img class='img' src='https://images-na.ssl-images-amazon.com/images/I/51oSZOESQ6L.jpg' alt=''></img>
-                        </p>
+                        <img class='img' src='https://images-na.ssl-images-amazon.com/images/I/51oSZOESQ6L.jpg' alt='Gambar Buku'></img>
+                        <h5> Harry potter</h5>
                     </div>
 
                 </div>
