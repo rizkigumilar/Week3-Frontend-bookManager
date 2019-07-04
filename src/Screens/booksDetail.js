@@ -3,6 +3,7 @@ import Data from '../dataDummy'
 import { Link } from 'react-router-dom'
 import '../assets/booksDetail.css'
 
+
 function convert(date) {
   let data = Date.parse(date)
   let newDate = new Date(data)
@@ -20,7 +21,7 @@ function booksDetail(props) {
     <div className="book-detail">
       <div>
         <ul>
-          <li><Link to={`/book/${bookid}/edit`}>Edit</Link></li>
+          <li ><Link to={`/book/${bookid}/edit`}>Edit</Link></li>
           <li><Link to="">Delete</Link></li>
         </ul>
         <img className={'imageHeader'} src={data.image_url} alt={data.title} />

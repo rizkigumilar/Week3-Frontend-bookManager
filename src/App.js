@@ -3,11 +3,10 @@ import './assets/App.css';
 import Navbar from './components/Navbar';
 import Search from './components/Search';
 import Data from './dataDummy'
-import Add from './components/add';
 import Flex from './components/flexBox';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
-import BookDetail from './Screens/booksDetail'
-import Modal from './components/modal'
+import BookDetail from './Screens/booksDetail';
+import Add from './components/add';
 
 
 class App extends Component {
@@ -24,7 +23,6 @@ class App extends Component {
           <Route exact path={"/"} component={Add} />
           <Route exact path={"/"} render={() => <Flex data={this.state} />} />
           <Route exact path={"/book/:bookid"} component={BookDetail} />
-          <Route exact path={"/book/:bookid"} component={Modal}/>
         </Router>
 
       </div>
