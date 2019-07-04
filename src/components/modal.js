@@ -26,14 +26,6 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(4),
 
     },
-    Button: {
-        margin: theme.spacing(1),
-        backgroundColor: 'yellow',
-        marginLeft: '1100px',
-        height: '40px',
-        width: '80px',
-        marginBlockStart: '100px'
-    },
     Button2: {
         margin: theme.spacing(1),
         backgroundColor: 'yellow',
@@ -66,13 +58,9 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function SimpleModal() {
-    const [open, setOpen] = React.useState(false);
+    const [setOpen] = React.useState(false);
     // getModalStyle is not a pure function, we roll the style only on the first render
     const [modalStyle] = React.useState(getModalStyle);
-
-    const handleOpen = () => {
-        setOpen(true);
-    };
 
     const handleClose = () => {
         setOpen(false);
@@ -81,16 +69,14 @@ export default function SimpleModal() {
 
     return (
         <div>
-            <Button onClick={handleOpen} className={classes.Button}>Add</Button>
             <Modal
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
-                open={open}
                 onClose={handleClose}>
                 <div style={modalStyle} className={classes.paper}>
                     <Button onClick={handleClose} className={classes.Close}>X</Button>
                     <Typography variant="h4" id="modal-title">
-                        Add Data
+                        Edit Data
                 </Typography>
                     <form className={classes.container} noValidate autoComplete="off">
                          <TextField
@@ -121,7 +107,7 @@ export default function SimpleModal() {
                             variant="outlined"
                         />
                     </form>
-                    <Button onClick={handleClose} className={classes.Button2}>Save</Button>
+                    <Button onClick={handleClose} className={classes.Button2} type="submit">Save</Button>
                     <SimpleModal />
                 </div>
             </Modal>

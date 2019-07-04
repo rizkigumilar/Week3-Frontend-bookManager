@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Data from '../dataDummy';
-import './flex.css';
+import '../assets/flex.css';
 
 
 function text(text) {
