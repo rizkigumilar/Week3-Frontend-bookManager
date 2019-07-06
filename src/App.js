@@ -1,33 +1,14 @@
 import React, { Component } from 'react';
-import './assets/App.css';
-import Navbar from './components/Navbar';
-import Search from './components/Search';
-import Data from './dataDummy'
-import Flex from './components/flexBox';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
-import BookDetail from './Screens/booksDetail';
-import Add from './components/add';
-
+import './App.css';
+import Router from './routes/route';
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = Data
-  }
   render() {
-    return (
+    return(
       <div>
-        <Router>
-          <Route exact path={"/"} component={Navbar} />
-          <Route exact path={"/"} component={Search} />
-          <Route exact path={"/"} component={Add} />
-          <Route exact path={"/"} render={() => <Flex data={this.state} />} />
-          <Route exact path={"/book/:bookid"} component={BookDetail} />
-        </Router>
-
+        <Router />
       </div>
-
     )
   }
 }
-export default App;
+export default App

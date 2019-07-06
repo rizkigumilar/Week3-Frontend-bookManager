@@ -1,5 +1,4 @@
-import React from 'react';
-import Data from '../dataDummy'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/booksDetail.css'
 
@@ -13,16 +12,22 @@ function convert(date) {
   var year = newDate.getFullYear();
   return `${day} ${month} ${year}`
 }
-
-function booksDetail(props) {
+let data
+function BookDetail(props) {
   let bookid = props.match.params.bookid
-  let data = Data.find((item) => item.bookid === bookid)
+  let Data = props.data.Data
+  console.log(Data)
+  data = Data.find((item) => item.bookid === bookid)
+  function deleteData() {
+    props.showModalDelete()
+  }
   return (
     <div className="book-detail">
       <div>
         <ul>
-          <li ><Link to={`/book/${bookid}/edit`}>Edit</Link></li>
-          <li><Link to="">Delete</Link></li>
+          <li><Link to="/book" className="back">BACK</Link></li>
+          <li className="button" onClick={props.showModal}>Edit</li>
+          <li className="button" onClick={deleteData}>Delete</li>
         </ul>
         <img className={'imageHeader'} src={data.image_url} alt={data.title} />
       </div>
@@ -35,5 +40,4 @@ function booksDetail(props) {
     </div>
   )
 }
-
-export default booksDetail
+export default BookDetail

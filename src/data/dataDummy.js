@@ -66,8 +66,8 @@ const data = [
     },
     {
         bookid: "6",
-        title: "After Atlas",
-        image_url: "https://blog.sribu.com/wp-content/uploads/2018/07/Nuansa-Cover-Buku.jpg",
+        title: "One Punch Man",
+        image_url: "https://upload.wikimedia.org/wikipedia/id/thumb/c/c3/OnePunchMan_manga_cover.png/220px-OnePunchMan_manga_cover.png",
         writer: "Makna",
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis ligula et nisl commodo eleifend. Vestibulum hendrerit nisl iaculis, volutpat diam et, consequat neque. Donec placerat egestas augue a posuere. Fusce pharetra faucibus euismod. Phasellus tristique, urna ac consectetur mollis, risus metus vehicula est, non pellentesque eros turpis sed quam. Phasellus eget diam at sem feugiat venenatis sit amet nec ante. Suspendisse a porttitor sem. Vestibulum gravida odio eget libero ornare, non consectetur diam tincidunt. Pellentesque at interdum metus, et euismod dolor. Duis hendrerit mattis mi ac vehicula. Aliquam a mattis metus. Fusce ut ipsum tempor, accumsan est eget, pellentesque nisi. Praesent porttitor est magna, vel ultrices massa egestas nec. Nulla ornare, lacus malesuada feugiat hendrerit, sem enim efficitur sem, a luctus erat mauris ut odio. Vivamus viverra eget lacus at laoreet. Integer sit amet ultricies elit.
         Fusce mollis risus in ipsum dignissim, blandit varius nunc fringilla. Nulla in est eget augue pulvinar tincidunt. Maecenas vel ipsum in erat maximus ultricies sit amet sed turpis. Integer faucibus at diam sit amet vehicula. Nulla quis consectetur purus, sit amet vulputate risus. Integer pharetra nisi urna, vitae facilisis mi condimentum sed. Phasellus porttitor porttitor orci, at feugiat urna facilisis facilisis. In ac porttitor nibh, vel egestas ligula. Nunc eget vulputate ex, at pellentesque orci.
